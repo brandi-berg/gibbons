@@ -50,3 +50,30 @@ Gibbons links directly to two specialized platform automation tools natively ins
 ```text
 [Standard End-to-End Sequence Map]
 Final /enhance ➔ skillsmate ➔ Sourcing Pass ➔ /validate ➔ /external + intelmate ➔ /redteam Pre-Mortem ➔ /outreach
+
+---
+
+## 📐 System Blueprint
+
+gibbons/
+├── manifest                               # Universal process guide & sequence routing
+├── skills/
+│   ├── tone-of-voice/                    # /voice-tone local configuration profile
+│   ├── Job Description Enhancement/       # /enhance logic framework
+│   ├── Recruiting Kickoff Prep/           # /kickoff intake calibration guide
+│   ├── OKR - KPI Builder/                 # /okr performance metric generator
+│   ├── Interview Kit Builder/             # /interview structural rubric kit
+│   ├── External Company Research/         # /external target competitor scraper
+│   ├── Candidate Validate for alignment/  # /validate evidence mapping engine
+│   ├── Outreach created/                  # /outreach source-mapped sequence model
+│   ├── Kickoff Signal Extraction/         # /signals raw transcript extractor
+│   ├── JD Detox/                          # /detox quick-cleaning interface
+│   ├── Section Rewrite/                   # /rewrite targeted mutation engine
+│   └── Red Team/                          # /redteam pre-mortem testing ground
+├── templates/
+│   ├── Recruiting Request Template        # Google Doc request ingestion asset
+│   └── Recruiting Kickoff Template        # Google Doc alignment meeting script
+└── memory/
+    ├── company/                           # Cached internal/external research profiles
+    ├── kickoffs/                          # Local role isolation state data logs
+    └── outreach-log/                      # Collision guard checking historical outreach
