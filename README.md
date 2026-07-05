@@ -49,7 +49,7 @@ Gibbons links directly to two specialized platform automation tools natively ins
 
 ---
 
-## 📐 System Blueprint
+## 📂 System Architecture Blueprint
 
 gibbons/
 ├── manifest                               # Universal process guide & sequence routing
