@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gibbons — AI-Powered Recruiting Command Center</title>
+<title>Gibbons v2.0 — AI-Powered Recruiting Command Center</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -175,6 +175,7 @@
   }
   .phase-pill.p1 { background: #fde8d8; color: #9a3412; }
   .phase-pill.p2 { background: #fef3c7; color: #92400e; }
+  .phase-pill.p3 { background: #fee2e2; color: #991b1b; }
   .phase-title { font-size: 1.1rem; font-weight: 700; color: #1c1917; }
   .phase-desc { font-size: 0.9rem; color: #78716c; }
 
@@ -226,6 +227,8 @@
     margin-bottom: 8px;
   }
   .step-cmd.amber { color: #92400e; background: #fef3c7; }
+  .step-cmd.rust { color: #991b1b; background: #fee2e2; }
+  .step-cmd.teal { color: #0f766e; background: #ccfbf1; }
   .step-name { font-size: 0.82rem; font-weight: 600; color: #1c1917; margin-bottom: 4px; }
   .step-desc { font-size: 0.76rem; color: #a8a29e; line-height: 1.4; }
 
@@ -242,14 +245,6 @@
     gap: 10px;
   }
   .carry-forward-note .icon { font-size: 1rem; flex-shrink: 0; }
-  .carry-forward-note code {
-    background: #fde8d8;
-    color: #c2410c;
-    padding: 1px 5px;
-    border-radius: 3px;
-    font-family: 'SF Mono', monospace;
-    font-size: 0.78rem;
-  }
 
   .phase-divider {
     text-align: center;
@@ -296,6 +291,7 @@
   .skill-cmd.orange { background: #fde8d8; color: #9a3412; }
   .skill-cmd.amber  { background: #fef3c7; color: #92400e; }
   .skill-cmd.rust   { background: #fee2e2; color: #991b1b; }
+  .skill-cmd.teal   { background: #ccfbf1; color: #0f766e; }
   .skill-cmd.slate  { background: #f5f5f4; color: #44403c; }
 
   .skill-card h3 { font-size: 0.95rem; font-weight: 700; color: #1c1917; margin-bottom: 8px; }
@@ -394,14 +390,14 @@
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-badge">Claude Cowork Plugin</div>
+  <div class="hero-badge">Gibbons Framework v2.0</div>
   <h1>Meet <span>Gibbons.</span><br>Your AI Recruiting Command Center.</h1>
-  <p>A structured, AI-powered workflow system that takes a role from rough job description to validated candidate outreach — with no generic output, no skipped steps, and no context lost between sessions.</p>
+  <p>Deployed as a native Cowork plugin. A highly structured pipeline built on Claude AI that orchestrates multi-agent systems, external intel triggers, and adversarial loops with absolute state persistence.</p>
   <div class="hero-stats">
-    <div class="hero-stat"><span class="num">8</span><span class="label">Slash Commands</span></div>
-    <div class="hero-stat"><span class="num">2</span><span class="label">Workflow Phases</span></div>
-    <div class="hero-stat"><span class="num">16</span><span class="label">Interview Questions</span></div>
-    <div class="hero-stat"><span class="num">5</span><span class="label">OKRs per Role</span></div>
+    <div class="hero-stat"><span class="num">11</span><span class="label">Slash Commands</span></div>
+    <div class="hero-stat"><span class="num">2</span><span class="label">Platform Tools</span></div>
+    <div class="hero-stat"><span class="num">2</span><span class="label">Execution Phases</span></div>
+    <div class="hero-stat"><span class="num">0</span><span class="label">Generic Output</span></div>
   </div>
 </section>
 
@@ -411,48 +407,48 @@
     <div class="section-label">Overview</div>
     <div class="intro-grid">
       <div class="intro-text">
-        <div class="section-title">Built for recruiters who think like operators.</div>
-        <p>Gibbons is a recruiting intelligence plugin built on <strong>Claude AI</strong>. It runs as a structured, step-by-step workflow — from the moment a hiring request lands to the moment a candidate receives a personalized outreach message.</p>
-        <p>Every output is grounded in company context, hiring manager signals, and verifiable candidate evidence. <strong>There is no generic output.</strong> If Gibbons can't cite it, it doesn't say it.</p>
-        <p>The system operates in two phases: a <strong>role intake phase</strong> that builds the job, the interview process, and the success definition — and a <strong>calibration and outreach phase</strong> that validates candidates and crafts outreach that creates real friction and real responses.</p>
-        <p>Context carries forward between sessions via structured handoff blocks, so no recruiter has to re-paste the same job description three times to get the work done.</p>
+        <div class="section-title">Built for recruiting leaders who design like engineers.</div>
+        <p>Gibbons is a production-grade talent acquisition workspace plugin built to run natively inside <strong>Claude Cowork</strong>[cite: 3]. Rather than running erratic, context-blind prompt chats, Gibbons executes an unbroken, data-driven pipeline constrained by explicit security gates[cite: 3].</p>
+        <p>Every single output is rigorously validated against company context files and core configuration parameters[cite: 1, 3]. <strong>There is zero inference.</strong> If information is missing from a candidate profile, Gibbons outputs an explicit warning rather than making programmatic assumptions[cite: 3].</p>
+        <p>Version 2.0 introduces deep automation wiring with external platform skills like <strong>skillsmate</strong> and <strong>intelmate</strong>, alongside an aggressive <strong>/redteam</strong> pre-mortem matrix to challenge strategic plan vulnerabilities before outreach occurs[cite: 3].</p>
       </div>
       <div>
         <div class="principle-card">
-          <h4>Candidate Truth Rules</h4>
-          <p>Every claim about a candidate must trace to explicit evidence in their profile. No inference. No gap-filling. If it's not stated, it's "not stated."</p>
+          <h4>Candidate Truth Protocol</h4>
+          <p>Every claim, rating, or validation metric must map verbatim to explicit evidence blocks inside a candidate's file. Zero hallucination allowed[cite: 3].</p>
         </div>
         <div class="principle-card">
-          <h4>Section B + C Context Binding</h4>
-          <p>All output is shaped by company values, ideal candidate profile, and recruiter voice. If the output could apply to any company, it fails.</p>
+          <h4>Tight Context Binding</h4>
+          <p>System activities are restricted by local data definitions (Voice/Tone, Ideal Candidate Profiles, Technical Guardrails). Generic output triggers a loop fail[cite: 1, 3].</p>
         </div>
         <div class="principle-card">
-          <h4>Carry Forward Architecture</h4>
-          <p>Each skill ends with a structured handoff block. Paste it into the next session. Zero re-work. Full context preserved.</p>
+          <h4>Platform Skill Orchestration</h4>
+          <p>Natively hooks into automated scraping tools to extract competitor compensation, career architecture, and talent brand scoring on the fly[cite: 3].</p>
         </div>
         <div class="principle-card">
-          <h4>Memory Persistence</h4>
-          <p>Company research and kickoff notes are stored per-role in a memory directory so any session can pick up exactly where the last left off.</p>
+          <h4>Cross-Session Handoffs</h4>
+          <p>Maintains persistent memory directories and structural handoff blocks so context moves securely from phase to phase without duplication of data[cite: 3].</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- WORKFLOW -->
+<!-- WORKFLOW SECTIONS -->
 <section style="background: #faf9f7;">
   <div class="container">
-    <div class="section-label">How It Works</div>
-    <div class="section-title">Two phases. One continuous chain.</div>
-    <p class="section-sub">Every role moves through the same sequence. No skipping steps. Each output feeds the next.</p>
+    <div class="section-label">Pipeline Workflow</div>
+    <div class="section-title">The End-to-End Execution Sequence</div>
+    <p class="section-sub">Gibbons enforces step-by-step pipeline hygiene. Every stage programmatically feeds the next block[cite: 3].</p>
 
     <div class="phases-wrap">
+      <!-- PHASE 1 -->
       <div class="phase">
         <div class="phase-header">
           <span class="phase-pill p1">Phase 1</span>
           <div>
-            <div class="phase-title">Role Intake</div>
-            <div class="phase-desc">JD to structured interview process. Happens before sourcing begins.</div>
+            <div class="phase-title">Role Strategy & Intake Optimization</div>
+            <div class="phase-desc">From initial request ingestion to complete, calibrated evaluation rubrics[cite: 3].</div>
           </div>
         </div>
         <div class="steps-flow">
@@ -460,225 +456,172 @@
             <div class="step-num">Step 1</div>
             <span class="step-cmd">/enhance</span>
             <div class="step-name">JD Enhancement</div>
-            <div class="step-desc">Detox the raw JD. Remove bias, inflate clarity, add search terms.</div>
+            <div class="step-desc">Detox raw JDs. Strip bias, maximize terminology, add search indexing[cite: 3].</div>
           </div>
           <div class="step-card">
             <div class="step-num">Step 2</div>
             <span class="step-cmd">/kickoff</span>
             <div class="step-name">Kickoff Prep</div>
-            <div class="step-desc">Risk flags, strategic questions, framing for the hiring manager meeting.</div>
+            <div class="step-desc">Generate probing questions and challenge assumptions for hiring managers[cite: 3].</div>
           </div>
           <div class="step-card">
             <div class="step-num">Step 3</div>
-            <span class="step-cmd">/okr</span>
-            <div class="step-name">OKR + KPI Builder</div>
-            <div class="step-desc">5 first-year objectives with measurable key results and KPIs.</div>
+            <span class="step-cmd">/signals</span>
+            <div class="step-name">Signal Extraction</div>
+            <div class="step-desc">Isolate anti-profiles, capability bars, and outcome criteria from transcripts[cite: 3].</div>
           </div>
           <div class="step-card">
             <div class="step-num">Step 4</div>
+            <span class="step-cmd">/okr</span>
+            <div class="step-name">OKR & KPI Builder</div>
+            <div class="step-desc">Construct 5 concrete first-year objectives linked directly to quantifiable KPIs[cite: 3].</div>
+          </div>
+          <div class="step-card">
+            <div class="step-num">Step 5</div>
             <span class="step-cmd">/interview</span>
-            <div class="step-name">Interview Kit</div>
-            <div class="step-desc">16 questions across 4 panels. Three-tier rubrics. Ready to run.</div>
+            <div class="step-name">Interview Architecture</div>
+            <div class="step-desc">Build complete standardized panel interview questions with multi-tier rubrics[cite: 3].</div>
           </div>
         </div>
         <div class="carry-forward-note">
-          <span class="icon">&#8599;</span>
-          <span>After kickoff prep, the recruiter meets with the hiring manager using the Kickoff Template Google Doc. Meeting notes feed directly into <code>/okr</code> and <code>/interview</code> — no re-paste required.</span>
+          <span class="icon">&#9881;</span>
+          <span><strong>Automation Trigger:</strong> Running the final post-kickoff <code>/enhance</code> sequence immediately fires <code>skillsmate</code> to build a ranked Skills Density Index and export optimized boolean search strings[cite: 3].</span>
         </div>
       </div>
 
       <div class="phase-divider">
-        <span>Sourcing happens here — outside of Gibbons</span>
+        <span>Sourcing execution layer (Recruiter uses exported booleans to gather profiles)[cite: 3]</span>
       </div>
 
+      <!-- PHASE 2 -->
       <div class="phase">
         <div class="phase-header">
           <span class="phase-pill p2">Phase 2</span>
           <div>
-            <div class="phase-title">Calibration + Outreach</div>
-            <div class="phase-desc">Candidate profiles in. Validated, personalized outreach out.</div>
+            <div class="phase-title">Candidate Calibration, Validation & Conversion</div>
+            <div class="phase-desc">Filtering profiles through verification gates to deliver hyper-personalized outreach sequences[cite: 3].</div>
           </div>
         </div>
         <div class="steps-flow">
           <div class="step-card">
-            <div class="step-num">Step 5</div>
-            <span class="step-cmd amber">/validate</span>
-            <div class="step-name">Candidate Validation</div>
-            <div class="step-desc">Signal strength rating 1-5. JD mapping. Evidence-only. Proceed or skip.</div>
-          </div>
-          <div class="step-card">
-            <div class="step-num">Optional</div>
-            <span class="step-cmd amber">/external</span>
-            <div class="step-name">Company Research</div>
-            <div class="step-desc">14-section intel brief on a candidate's current or prior employer.</div>
-          </div>
-          <div class="step-card">
             <div class="step-num">Step 6</div>
-            <span class="step-cmd amber">/outreach</span>
-            <div class="step-name">Candidate Outreach</div>
-            <div class="step-desc">Hook/Bridge/Value/CTA. 4 messages per candidate. Tension levels A-D.</div>
+            <span class="step-cmd amber">/validate</span>
+            <div class="step-name">Profile Validation</div>
+            <div class="step-desc">Evidence-only mapping. Applies a 1-5 signal strength rating against requirements[cite: 3].</div>
           </div>
-        </div>
-        <div class="carry-forward-note">
-          <span class="icon">&#8599;</span>
-          <span>Validation signals carry forward into <code>/outreach</code> automatically — even across sessions. If a <code>CARRY FORWARD — Candidate Validation</code> block is present, signal extraction is skipped. No duplicate work.</span>
+          <div class="step-card">
+            <div class="step-num">Step 7</div>
+            <span class="step-cmd amber">/external</span>
+            <div class="step-name">Competitor Deep-Dive</div>
+            <div class="step-desc">Fires <code>intelmate</code> to scrape target current/prior company comp levels and talent brand metrics[cite: 3].</div>
+          </div>
+          <div class="step-card">
+            <div class="step-num">Step 8</div>
+            <span class="step-cmd rust">/redteam</span>
+            <div class="step-name">Pre-Mortem Gate</div>
+            <div class="step-desc">Decline pre-mortem. Assesses friction barriers and counter-offer vulnerabilities before messaging[cite: 3].</div>
+          </div>
+          <div class="step-card">
+            <div class="step-num">Step 9</div>
+            <span class="step-cmd teal">/outreach</span>
+            <div class="step-name">Targeted Outreach</div>
+            <div class="step-desc">Build 4 personalized messaging flows (Tensions A-D) bound tightly to source records[cite: 3].</div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SKILLS -->
+<!-- PLATFORM SKILLS AUTOMATION SECTION -->
 <section style="background: white;">
   <div class="container">
-    <div class="section-label">Skills Reference</div>
-    <div class="section-title">Every command. What it does. What it produces.</div>
-    <p class="section-sub">Gibbons runs as a Cowork plugin. Each skill is invokable by slash command with structured inputs and structured outputs.</p>
-    <div class="skills-grid">
+    <div class="section-label">Cowork Automation Ecosystem</div>
+    <div class="section-title">Integrated Platform Skills</div>
+    <p class="section-sub">Gibbons links directly into non-agentic tool automation to pull down objective data layers in real time[cite: 3].</p>
+    
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; max-width: 1000px; margin: 0 auto;">
+      <div style="background: #faf9f7; border: 1px solid #e7e5e4; padding: 24px; border-radius: 12px;">
+        <span style="font-family: monospace; font-weight: 700; color: #0f766e; background: #ccfbf1; padding: 4px 10px; border-radius: 6px; font-size: 0.85rem;">skillsmate</span>
+        <h3 style="margin: 12px 0 8px; font-size: 1.1rem; color: #1c1917;">Sourcing Strategy Engine</h3>
+        <p style="font-size: 0.88rem; color: #57534e; line-height: 1.6;">Ingests your final optimized JD. Scans market layout signals to identify companies actively hunting matching technical competencies, ranking targets on a Skills Density Index while extracting complex search strings for the recruiter[cite: 3].</p>
+      </div>
+      <div style="background: #faf9f7; border: 1px solid #e7e5e4; padding: 24px; border-radius: 12px;">
+        <span style="font-family: monospace; font-weight: 700; color: #0f766e; background: #ccfbf1; padding: 4px 10px; border-radius: 6px; font-size: 0.85rem;">intelmate</span>
+        <h3 style="margin: 12px 0 8px; font-size: 1.1rem; color: #1c1917;">Competitor Web Scraping Layer</h3>
+        <p style="font-size: 0.88rem; color: #57534e; line-height: 1.6;">Automates deep structural scraping of target career boards, indexing real-time compensation details, tracking active job updates, establishing localized talent brand metrics, and constructing competitive conversion battle cards[cite: 3].</p>
+      </div>
+    </div>
+  </div>
+</section>
 
+<!-- ALL SKILLS REFERENCE -->
+<section style="background: #faf9f7;">
+  <div class="container">
+    <div class="section-label">Command Index Reference</div>
+    <div class="section-title">The Complete Gibbons Engine Toolset</div>
+    <p class="section-sub">Granular, invokable slash commands with distinct data execution inputs and strict verification loops[cite: 3].</p>
+    
+    <div class="skills-grid">
       <div class="skill-card">
         <span class="skill-cmd orange">/enhance</span>
         <h3>JD Enhancement</h3>
-        <p>Cleans, positions, and optimizes a raw job description. Removes bias, inflated requirements, and vague language. Adds search-optimized terms and aligns to company values.</p>
-        <div class="skill-outputs">
-          <div class="skill-output-label">Outputs</div>
-          <span class="output-tag">Detoxed JD</span>
-          <span class="output-tag">Section C alignment check</span>
-          <span class="output-tag">Search term additions</span>
-          <span class="output-tag">Carry Forward &#8594; /kickoff</span>
-        </div>
+        <p>Removes implicit bias and inflated specifications. Optimizes technical indexing keys and maps alignment checks[cite: 3].</p>
       </div>
-
       <div class="skill-card">
         <span class="skill-cmd orange">/kickoff</span>
         <h3>Kickoff Prep</h3>
-        <p>Analyzes the enhanced JD to surface business risks, challenge untested assumptions, and generate high-leverage questions for the hiring manager meeting.</p>
-        <div class="skill-outputs">
-          <div class="skill-output-label">Outputs</div>
-          <span class="output-tag">Role signal extraction</span>
-          <span class="output-tag">7-10 strategic questions</span>
-          <span class="output-tag">Risk flags</span>
-          <span class="output-tag">Kickoff framing statement</span>
-          <span class="output-tag">Carry Forward &#8594; /okr</span>
-        </div>
+        <p>Surfaces operational risk indicators, flags hidden role criteria, and preps tailored questions for hiring managers[cite: 3].</p>
       </div>
-
+      <div class="skill-card">
+        <span class="skill-cmd orange">/signals</span>
+        <h3>Signal Extraction</h3>
+        <p>Extracts 6 critical metrics (anti-profiles, credential tensions, capability bars) out of loose conversation notes[cite: 3].</p>
+      </div>
       <div class="skill-card">
         <span class="skill-cmd orange">/okr</span>
-        <h3>OKR + KPI Builder</h3>
-        <p>Translates kickoff signals and hiring manager notes into 5 first-year objectives with measurable key results and KPIs. Defines what success looks like concretely.</p>
-        <div class="skill-outputs">
-          <div class="skill-output-label">Outputs</div>
-          <span class="output-tag">5 Objectives</span>
-          <span class="output-tag">Key Results per objective</span>
-          <span class="output-tag">KPIs</span>
-          <span class="output-tag">Carry Forward &#8594; /interview</span>
-        </div>
+        <h3>OKR & KPI Builder</h3>
+        <p>Processes intake criteria into 5 first-year performance metrics linked to distinct operational key results[cite: 3].</p>
       </div>
-
       <div class="skill-card">
         <span class="skill-cmd orange">/interview</span>
-        <h3>Interview Kit Builder</h3>
-        <p>Produces a full structured interview kit — 16 questions across 4 panels with three-tier rubrics for every question.</p>
-        <div class="skill-outputs">
-          <div class="skill-output-label">Outputs</div>
-          <span class="output-tag">16 questions</span>
-          <span class="output-tag">4 panels</span>
-          <span class="output-tag">Three-tier rubrics</span>
-          <span class="output-tag">Carry Forward &#8594; /validate</span>
-        </div>
+        <h3>Interview Kit</h3>
+        <p>Generates balanced 16-question evaluation scorecards broken into 4 panels with clear baseline evaluation levels[cite: 3].</p>
       </div>
-
       <div class="skill-card">
         <span class="skill-cmd amber">/validate</span>
         <h3>Candidate Validation</h3>
-        <p>Evaluates candidate profiles against the JD and ICP. Produces a Signal Strength Rating (1-5), evidence-mapped observations, and a clear proceed/skip recommendation.</p>
-        <div class="skill-outputs">
-          <div class="skill-output-label">Outputs</div>
-          <span class="output-tag">Signal Strength Rating</span>
-          <span class="output-tag">JD mapping (3-5 bullets)</span>
-          <span class="output-tag">Gaps and risks</span>
-          <span class="output-tag">Carry Forward &#8594; /outreach</span>
-        </div>
+        <p><strong>Candidate tracking only.</strong> Evaluates profiles against core metrics and outputs a strict 1-5 signal strength score[cite: 3].</p>
       </div>
-
-      <div class="skill-card">
-        <span class="skill-cmd amber">/outreach</span>
-        <h3>Candidate Outreach</h3>
-        <p>Builds 4 personalized outreach messages per candidate using the Hook/Bridge/Value/CTA framework. Tension levels A through D. Source-mapped. Compliance-checked. Never generic.</p>
-        <div class="skill-outputs">
-          <div class="skill-output-label">Outputs</div>
-          <span class="output-tag">4 messages per candidate</span>
-          <span class="output-tag">Source map</span>
-          <span class="output-tag">Section B absorption check</span>
-          <span class="output-tag">Compliance check</span>
-        </div>
-      </div>
-
       <div class="skill-card">
         <span class="skill-cmd rust">/external</span>
-        <h3>External Company Research</h3>
-        <p>Produces a 14-section intelligence brief on any company — funding, leadership, tech stack, culture, competitors, risk signals. Confidence and staleness flags on every section.</p>
-        <div class="skill-outputs">
-          <div class="skill-output-label">Outputs</div>
-          <span class="output-tag">14-section knowledge base</span>
-          <span class="output-tag">Confidence ratings</span>
-          <span class="output-tag">Staleness flags</span>
-          <span class="output-tag">Candidate pitch angles</span>
-        </div>
+        <h3>External Research</h3>
+        <p>Builds a 14-section context map regarding past employers, caching structural firm insights for messaging leverage[cite: 3].</p>
       </div>
-
+      <div class="skill-card">
+        <span class="skill-cmd rust">/redteam</span>
+        <h3>Red Team Pre-Mortem</h3>
+        <p>Adversarial check. Evaluates role logic flaws pre-sourcing, and potential candidate decline friction points pre-outreach[cite: 3].</p>
+      </div>
+      <div class="skill-card">
+        <span class="skill-cmd teal">/outreach</span>
+        <h3>Outreach Composer</h3>
+        <p>Deploys Hook/Bridge/Value/CTA structure to craft 4 distinct candidate sequences traversing varying communication tensions[cite: 3].</p>
+      </div>
       <div class="skill-card">
         <span class="skill-cmd slate">/detox</span>
         <h3>JD Detox</h3>
-        <p>Lighter-touch cleanup of a JD — strips jargon, bias, and bloat without running the full enhancement workflow. Good for a quick pass before a kickoff meeting.</p>
-        <div class="skill-outputs">
-          <div class="skill-output-label">Outputs</div>
-          <span class="output-tag">Cleaned JD</span>
-          <span class="output-tag">Removed items log</span>
-        </div>
+        <p>Lightweight utility layout pass. Fast-strips industry jargon, fluff text, and structural inflation indicators[cite: 3].</p>
       </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- GUARDRAILS -->
-<section style="background: #faf9f7;">
-  <div class="container">
-    <div class="section-label">Design Principles</div>
-    <div class="section-title">The rules that make every output trustworthy.</div>
-    <p class="section-sub">Gibbons enforces a layered constraint system across every skill. These aren't suggestions — they're hard checks built into each workflow.</p>
-    <div class="guardrails-grid">
-      <div class="guardrail-card">
-        <div class="g-icon" style="background:#fde8d8;">&#128269;</div>
-        <h4>Candidate Truth Rules</h4>
-        <p>Every claim about a candidate must trace to explicit text in their profile. No inferences. No pattern-matching. If information is missing, the output says "not stated" — not a plausible guess.</p>
+      <div class="skill-card">
+        <span class="skill-cmd slate">/rewrite</span>
+        <h3>Section Mutation</h3>
+        <p>Targeted execution module. Completely updates a single isolated block of an output without shifting overall system context[cite: 3].</p>
       </div>
-      <div class="guardrail-card">
-        <div class="g-icon" style="background:#fef3c7;">&#127919;</div>
-        <h4>Context Binding</h4>
-        <p>Section B (voice and tone) and Section C (ICP and values) are authoritative context that shapes every output. If the deliverable could apply to any company, it fails the check.</p>
-      </div>
-      <div class="guardrail-card">
-        <div class="g-icon" style="background:#fff8f5;">&#9878;&#65039;</div>
-        <h4>Scope Constraints</h4>
-        <p>Do exactly what was asked. No strategic additions, no unsolicited recommendations, no broadened mandates. Adjacent ideas go in an "Optional extras" section — max 3 bullets, never expanded.</p>
-      </div>
-      <div class="guardrail-card">
-        <div class="g-icon" style="background:#fee2e2;">&#128721;</div>
-        <h4>Non-Negotiables</h4>
-        <p>A hard list of phrases, patterns, and behaviors that never appear in any output — regardless of context. These override all stylistic defaults and apply to every word written on the recruiter's behalf.</p>
-      </div>
-      <div class="guardrail-card">
-        <div class="g-icon" style="background:#faf9f7;">&#128203;</div>
-        <h4>Assumption Discipline</h4>
-        <p>When inputs are missing, Gibbons chooses a practical default and labels it clearly under "Assumptions." Assumptions are never blended into core output or presented as facts.</p>
-      </div>
-      <div class="guardrail-card">
-        <div class="g-icon" style="background:#f0fdf4;">&#9989;</div>
-        <h4>Verification Gates</h4>
-        <p>Before final output, each skill runs a compliance check. Outreach messages run a source map, a Section B absorption check, and a could-you-send-this-to-ten-people test. Failures trigger a rewrite before anything is shown.</p>
+      <div class="skill-card">
+        <span class="skill-cmd slate">/voice-tone</span>
+        <h3>Voice & Tone Binder</h3>
+        <p>Loads and binds primary communication parameters to ensure all written deliverables mirror recruiter voice accurately[cite: 3].</p>
       </div>
     </div>
   </div>
@@ -688,39 +631,42 @@
 <section style="background: white;">
   <div class="container" style="max-width: 820px;">
     <div class="section-label">Architecture</div>
-    <div class="section-title">How Gibbons is structured.</div>
-    <p class="section-sub">A Cowork plugin with named skills, layered context files, Google Workspace templates, and a file-based memory system for cross-session persistence.</p>
+    <div class="section-title">Gibbons File Registry Structure</div>
+    <p class="section-sub">A pristine layout separating orchestration logic files, intake templates, and multi-session persistence memory folders[cite: 3].</p>
 
     <div class="arch-wrap">
       <div class="arch-header">
         <div class="arch-dot red"></div>
         <div class="arch-dot ylw"></div>
         <div class="arch-dot grn"></div>
-        <span>gibbons / plugin structure</span>
+        <span>gibbons / coworking plugin framework</span>
       </div>
       <div class="arch-body">
         <pre><span class="d">gibbons/</span>
-<span class="tr">&#9500;&#9472;&#9472;</span> <span class="d">manifest</span>                        <span class="ct"># Master workflow guide</span>
-<span class="tr">&#9474;</span>
-<span class="tr">&#9500;&#9472;&#9472;</span> <span class="d">skills/</span>
-<span class="tr">&#9474;   &#9500;&#9472;&#9472;</span> Section_A_Technical_Guardrails  <span class="ct"># Enforcement rules</span>
-<span class="tr">&#9474;   &#9500;&#9472;&#9472;</span> Section_B_About_Me              <span class="ct"># Voice + tone + role</span>
-<span class="tr">&#9474;   &#9500;&#9472;&#9472;</span> Section_C_ICP                   <span class="ct"># Ideal candidate profile</span>
-<span class="tr">&#9474;   &#9500;&#9472;&#9472;</span> JD_Enhancement          <span class="cm">/enhance</span>
-<span class="tr">&#9474;   &#9500;&#9472;&#9472;</span> Kickoff_Prep_Guide       <span class="cm">/kickoff</span>
-<span class="tr">&#9474;   &#9500;&#9472;&#9472;</span> OKR_KPI_Builder          <span class="cm">/okr</span>
-<span class="tr">&#9474;   &#9500;&#9472;&#9472;</span> Interview_Kit_Builder    <span class="cm">/interview</span>
-<span class="tr">&#9474;   &#9500;&#9472;&#9472;</span> Candidate_Validation     <span class="cm">/validate</span>
-<span class="tr">&#9474;   &#9500;&#9472;&#9472;</span> Candidate_Outreach       <span class="cm">/outreach</span>
-<span class="tr">&#9474;   &#9492;&#9472;&#9472;</span> External_Company_Research   <span class="cm">/external</span>
-<span class="tr">&#9474;</span>
-<span class="tr">&#9500;&#9472;&#9472;</span> <span class="d">templates/</span>
-<span class="tr">&#9474;   &#9500;&#9472;&#9472;</span> Recruiting_Request_Template     <span class="ct"># Google Doc</span>
-<span class="tr">&#9474;   &#9492;&#9472;&#9472;</span> Recruiting_Kickoff_Template     <span class="ct"># Google Doc</span>
-<span class="tr">&#9474;</span>
-<span class="tr">&#9492;&#9472;&#9472;</span> <span class="d">memory/</span>
-    <span class="tr">&#9500;&#9472;&#9472;</span> <span class="d">company/</span>    <span class="ct"># Cached internal research</span>
-    <span class="tr">&#9492;&#9472;&#9472;</span> <span class="d">kickoffs/</span>   <span class="ct"># One file per open role</span></pre>
+<span class="tr">&#9500;&#9472;&#9472;</span> <span class="d">manifest</span>                        <span class="ct"># Universal sequence workflow engine</span>
+<span class="tr">&#9474;
+&#9500;&#9472;&#9472;</span> <span class="d">skills/</span>                          <span class="ct"># Operational prompt constraint models</span>
+<span class="tr">&#9474;   &#9500;&#9472;&#9472;</span> tone-of-voice               <span class="cm">/voice-tone</span>
+<span class="tr">&#9474;   &#9500;&#9472;&#9472;</span> Job Description Enhancement  <span class="cm">/enhance</span>
+<span class="tr">&#9474;   &#9500;&#9472;&#9472;</span> Recruiting Kickoff Prep     <span class="cm">/kickoff</span>
+<span class="tr">&#9474;   &#9500;&#9472;&#9472;</span> OKR - KPI Builder            <span class="cm">/okr</span>
+<span class="tr">&#9474;   &#9500;&#9472;&#9472;</span> Interview Kit Builder        <span class="cm">/interview</span>
+<span class="tr">&#9474;   &#9500;&#9472;&#9472;</span> External Company Research   <span class="cm">/external</span>
+<span class="tr">&#9474;   &#9500;&#9472;&#9472;</span> Candidate Validate           <span class="cm">/validate</span>
+<span class="tr">&#9474;   &#9500;&#9472;&#9472;</span> Outreach created             <span class="cm">/outreach</span>
+<span class="tr">&#9474;   &#9500;&#9472;&#9472;</span> Kickoff Signal Extraction   <span class="cm">/signals</span>
+<span class="tr">&#9474;   &#9500;&#9472;&#9472;</span> JD Detox                     <span class="cm">/detox</span>
+<span class="tr">&#9474;   &#9500;&#9472;&#9472;</span> Section Rewrite              <span class="cm">/rewrite</span>
+<span class="tr">&#9474;   &#9492;&#9472;&#9472;</span> Red Team                     <span class="cm">/redteam</span>
+<span class="tr">&#9474;
+&#9500;&#9472;&#9472;</span> <span class="d">templates/</span>                       <span class="ct"># Standard Ingestion Frameworks</span>
+<span class="tr">&#9474;   &#9500;&#9472;&#9472;</span> Recruiting Request Template  <span class="ct"># Google Workspace Doc</span>
+<span class="tr">&#9474;   &#9492;&#9472;&#9472;</span> Recruiting Kickoff Template  <span class="ct"># Google Workspace Doc</span>
+<span class="tr">&#9474;
+&#9492;&#9472;&#9472;</span> <span class="d">memory/</span>                          <span class="ct"># Local State Data Repositories</span>
+    <span class="tr">&#9500;&#9472;&#9472;</span> <span class="d">company/</span>                    <span class="ct"># Cached competitor research maps</span>
+    <span class="tr">&#9500;&#9472;&#9472;</span> <span class="d">kickoffs/</span>                   <span class="ct"># Isolated state context tracking per open role</span>
+    <span class="tr">&#9492;&#9472;&#9472;</span> <span class="d">outreach-log/</span>               <span class="ct"># Contact history logging to prevent duplicates</span></pre>
       </div>
     </div>
   </div>
@@ -728,8 +674,8 @@
 
 <!-- FOOTER -->
 <footer>
-  <strong>Gibbons</strong> &mdash; AI-Powered Recruiting Command Center<br>
-  Built on Claude AI &middot; Runs in Claude Cowork &middot; Context-bound. Evidence-grounded. Never generic.<br>
+  <strong>Gibbons Framework v2.0</strong> &mdash; AI-Powered Recruiting Command Center<br>
+  Built on Claude AI &middot; Deployed in Claude Cowork &middot; Context-bound. Evidence-grounded. Never generic.<br>
   <div style="margin-top: 15px;">
     <a href="https://github.com/brandi-berg/gibbons" target="_blank" style="color: #fb923c; text-decoration: none; font-weight: 600; font-family: monospace; font-size: 0.85rem; border: 1px solid rgba(251,146,60,0.3); padding: 6px 14px; border-radius: 6px; display: inline-block; background: rgba(251,146,60,0.05);">
       &lt;/&gt; View Source Architecture on GitHub
