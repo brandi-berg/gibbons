@@ -47,10 +47,6 @@ Gibbons links directly to two specialized platform automation tools natively ins
 * **Execution Window:** Invoked natively during `/external` company research lookups or inside `/redteam` decline pre-mortems.
 * **Function:** Automatically scrapes careers pages, extracts raw compensation configurations, maps competitive talent branding, and builds conversion battle cards.
 
-```text
-[Standard End-to-End Sequence Map]
-Final /enhance ➔ skillsmate ➔ Sourcing Pass ➔ /validate ➔ /external + intelmate ➔ /redteam Pre-Mortem ➔ /outreach
-
 ---
 
 ## 📐 System Blueprint
@@ -77,3 +73,7 @@ gibbons/
     ├── company/                           # Cached internal/external research profiles
     ├── kickoffs/                          # Local role isolation state data logs
     └── outreach-log/                      # Collision guard checking historical outreach
+
+```text
+[Standard End-to-End Sequence Map]
+Final /enhance ➔ skillsmate ➔ Sourcing Pass ➔ /validate ➔ /external + intelmate ➔ /redteam Pre-Mortem ➔ /outreach
