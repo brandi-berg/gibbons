@@ -51,10 +51,11 @@ Gibbons links directly to two specialized platform automation tools natively ins
 
 ## 📂 System Architecture Blueprint
 
+```text
 gibbons/
 ├── manifest                               # Universal process guide & sequence routing
 ├── skills/
-│   ├── tone-of-voice/                    # /voice-tone local configuration profile
+│   ├── tone-of-voice/                     # /voice-tone local configuration profile
 │   ├── Job Description Enhancement/       # /enhance logic framework
 │   ├── Recruiting Kickoff Prep/           # /kickoff intake calibration guide
 │   ├── OKR - KPI Builder/                 # /okr performance metric generator
@@ -73,7 +74,3 @@ gibbons/
     ├── company/                           # Cached internal/external research profiles
     ├── kickoffs/                          # Local role isolation state data logs
     └── outreach-log/                      # Collision guard checking historical outreach
-
-```text
-[Standard End-to-End Sequence Map]
-Final /enhance ➔ skillsmate ➔ Sourcing Pass ➔ /validate ➔ /external + intelmate ➔ /redteam Pre-Mortem ➔ /outreach
